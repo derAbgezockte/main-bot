@@ -2,8 +2,6 @@ services:
   discord-bot:
     build: .
     image: python-discord-bot-template
-    env_file:
-      - .env
     volumes:
       - ./database:/bot/database
       - ./discord.log:/bot/discord.log
